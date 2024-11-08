@@ -1,0 +1,32 @@
+* {
+    text-align: center;
+}
+
+h1 {
+    color: black;
+    font-size: 60px;
+    background-color: gray;
+    border: 2px solid black;
+}
+
+h2 {
+    color: white;
+    background-color: black
+}
+
+h4 {
+    color: black;
+    background-color: gray;
+    border: 2px solid black;
+}
+
+p {
+    color: black;
+    background-color: whitesmoke;
+    border: 2px solid black;
+}
+
+button {
+    color: black;
+    background-color: whitesmoke;
+}
