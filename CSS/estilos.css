@@ -1,0 +1,63 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora {
+    /*todo el contenido de cuadricula se va a distribuir visualmente como una cuadriculo*/
+    display: grid;
+    grid-template-columns: 75px 75px 75px 75px;
+    grid-template-rows: 75px 75px 75px 75px 75px 75px;
+    padding: 15px;
+    /*border: solid blue;*/
+    border-radius: 35px;
+    background: rgb(176, 190, 199);
+    box-shadow: 15px 10px 5px 5px rgba(44, 44, 44);
+}
+
+
+.pantalla {
+    border: solid black 3.5px;
+    border-radius: 18px;
+    grid-column: span 4;
+    background-color: rgb(168, 168, 168);
+    padding: 18px;
+    text-align: right;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+button {
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 32px;
+    border: solid black 2.5px;
+    background: rgb(131, 125, 156);
+    font-size: 25px;
+    /*box-shadow: 3.5px 1.5px 1.5px 1.5px rgba(44, 44, 44);*/
+}
+
+#c {
+    grid-column: span 2;
+    background-color: rgb(79, 90, 108);
+
+}
+
+#c:hover {
+    background: rgb(111, 120, 116);
+}
+
+#c:active {
+    background: rgb(124, 146, 140);
+}
+
+button:hover {
+    background: rgb(111, 120, 116);
+}
+
+button:active {
+    background: rgb(124, 146, 140);
+
+}
