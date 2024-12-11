@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <div id="myApp">
+        <label for="idNombre">Nombre</label>
+        <input v-model="nombre" type="text" id="idNombre">
+        <hr>
+        <label for="idApellido">Apellido</label>
+        <input v-model="apellido" type="text" id="idApellido">
+        <hr>
+        <label for="idHobby">Hobby</label>
+        <input v-model="hobby" type="text" id="idHobby">
+        <hr>
+        <label for="idLugNac">Lugar de Nacimiento</label>
+        <input v-model="lugNacimientooo" type="text" id="idLugNac">
+        <hr>
+        <button v-on:click="agregarPersona">Guardar</button>
+        <hr>
+        <ul>
+            <li v-for="persona in listaPersonas">
+                Nombre: {{persona.nombre}} - Apellido: {{persona.apellido}} - Hobby: {{persona.hobby}} - Lugar de Nacimiento: {{persona.lugNacimiento}}
+            </li>
+        </ul>
+    </div>
+
+
+    <script src="../JS/formulario.js"></script>
+</body>
+
+</html>
